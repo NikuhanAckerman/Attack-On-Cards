@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: url("../img/bgPartida.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.line{
+    width: 90%;
+    height: 4px;
+    background: #866141cc;
+    box-shadow: 2px 2px rgba(0,0,0,.5);
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%);
+}
+
+ul{
+    width: 35%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+ul li{
+    width: 150px;
+    height: 200px;
+    list-style-type: none;
+    display: inline-block;
+    background: #d6ba6c;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 4px 4px rgba(0,0,0,.5);
+    margin: 0 -30px;
+    transition: .4s;
+    position: relative;
+}
+
+ul li h3{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+ul li span{
+    font-size: 14px;
+    margin: 5px 10px;
+}
+
+.left1{
+    transform: rotate(-10deg) translateY(10px);
+}
+.left2{
+    transform: rotate(-5deg);
+}
+.center{
+    transform: translateY(-5px);
+}
+.right1{
+    transform: rotate(5deg);
+}
+.right2{
+    transform: rotate(10deg) translateY(10px);
+}
+
+ul li:hover{
+    z-index: 10;
+    transition: .6s;
+    transform: translateY(-100px) scale(1.1,1.1);
+}
+
+.img{
+    width: 90%;
+    height: 40%;
+    margin: 10px auto;
+    background: blueviolet;
+    background: url("../img/cards/card1.jpg");
+    background-size: cover;
+    border: 1px solid black;
+}
+
+.buttons{
+    width: 100%;
+    margin-top: 5px;
+}
+
+ul li button:nth-of-type(1){
+    padding: 2px;
+    margin: 0 8px;
+    background: rgb(20,200,20);
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    outline: 0;
+}
+
+ul li button:nth-of-type(2){
+    padding: 2px;
+    margin: 0 8px;
+    background: rgb(200,20,20);
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    outline: 0;
+}
